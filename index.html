@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--
+      Meta tags for accessibility and SEO.
+      - 'charset' ensures proper character encoding.
+      - 'viewport' is crucial for responsive design.
+      - 'title' is one of the most important SEO tags, providing a clear
+        and descriptive title for the search engine results page (SERP).
+      - 'description' provides a brief summary of the page content, which
+        search engines often display below the title.
+    -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semantic HTML5: A Guide to Accessibility & SEO</title>
+    <meta name="description" content="An example of a basic web page built with semantic HTML5 tags, focusing on accessibility and SEO best practices.">
+</head>
+<body>
+
+    <!--
+      The <header> element represents introductory content, typically containing
+      a site's branding, main title, and navigation. It is a key accessibility
+      landmark.
+    -->
+    <header>
+        <!--
+          The <h1> tag should be used once per page to represent the most
+          important heading, or the main title of the page or site.
+        -->
+        <h1>The Semantic Web Blog</h1>
+
+        <!--
+          The <nav> element defines a set of navigation links. It is a crucial
+          landmark for screen readers, allowing users to quickly jump to the
+          navigation section.
+        -->
+        <nav aria-label="Main navigation">
+            <!-- The <ul> and <li> elements are used to create a list of links. -->
+            <ul>
+                <li><a href="#introduction">Introduction</a></li>
+                <li><a href="#principles">Core Principles</a></li>
+                <li><a href="#conclusion">Conclusion</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--
+      The <main> element represents the dominant content of the document.
+      It is a primary landmark for assistive technologies, signaling the
+      start of the page's unique content. It should only be used once per page.
+    -->
+    <main>
+        <!--
+          The <article> element represents a self-contained composition in a document,
+          like a blog post, news story, or forum comment. It makes sense on its own.
+        -->
+        <article aria-labelledby="article-title">
+            <!--
+              The <h2> tag is the second most important heading. Headings should
+              be used in a logical, hierarchical order to structure content
+              for both users and search engines.
+            -->
+            <h2 id="article-title">Understanding Semantic HTML5 for Better Web Pages</h2>
+
+            <!-- The <section> element groups together related content. -->
+            <section id="introduction">
+                <h3>Introduction to Semantic Markup</h3>
+                <p>
+                    Semantic HTML refers to the use of HTML markup to reinforce the
+                    meaning of the information in web pages rather than simply to
+                    define its presentation or look. By using elements like
+                    <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>,
+                    <code>&lt;main&gt;</code>, and <code>&lt;footer&gt;</code>,
+                    we create a structure that is both human-readable and machine-readable.
+                </p>
+            </section>
+
+            <section id="principles">
+                <h3>Key Principles of Good Web Design</h3>
+                <p>
+                    This section will cover the fundamental principles that guide
+                    the creation of a well-structured web page.
+                </p>
+
+                <!-- A nested section with an h3 to demonstrate heading hierarchy. -->
+                <section>
+                    <h4>Accessibility (A11y)</h4>
+                    <p>
+                        Accessibility is the practice of making your websites usable
+                        by as many people as possible. Semantic HTML, along with
+                        attributes like <code>aria-label</code>, helps screen readers
+                        and other assistive technologies interpret your content correctly.
+                    </p>
+                </section>
+
+                <section>
+                    <h4>Search Engine Optimization (SEO)</h4>
+                    <p>
+                        SEO is the process of optimizing your website to rank higher
+                        in search engine results. Proper use of headings, descriptive
+                        titles, and meta descriptions are foundational to on-page SEO.
+                    </p>
+                </section>
+            </section>
+        </article>
+    </main>
+
+    <!--
+      The <footer> element represents the footer for its nearest sectioning
+      content or sectioning root element. A footer typically contains
+      information about its section, such as who wrote it, links to related
+      documents, or copyright data.
+    -->
+    <footer>
+        <small>
+            &copy; 2025 Semantic Web Blog. All rights reserved.
+        </small>
+    </footer>
+
+</body>
+</html>
